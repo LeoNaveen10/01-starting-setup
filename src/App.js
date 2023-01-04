@@ -1,8 +1,9 @@
 // import ExpenseReport from "./components/ExpenseReport";
-import ExpenseSpread from "./components/ExpensesSpread";
+import ExpenseSpread from './components/Expenses/ExpensesSpread';
+import ExpenseInput from './components/ExpenseInput/expenseInput';
 
 function App() {
-  const expenses = [
+	const expenses = [
 		{
 			id: 'e1',
 			title: 'Toilet Paper',
@@ -23,10 +24,10 @@ function App() {
 			date: new Date(2021, 5, 12),
 		},
 	];
-  return (
+	return (
 		<div>
-			<h2>Let's get started!</h2>
-		   <ExpenseSpread expenses={ expenses} />
+			<ExpenseInput />
+			<ExpenseSpread expenses={expenses} />
 		</div>
 	);
 }
